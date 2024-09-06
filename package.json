@@ -1,7 +1,7 @@
 {
   "name": "order-summary",
   "private": true,
-  "homepage": "https://Mikelyto1994.github.io/React_order-summary",
+  "homepage": "https://mikelyto1994.github.io/React_order-summary",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-      "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
