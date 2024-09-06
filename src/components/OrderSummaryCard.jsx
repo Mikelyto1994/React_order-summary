@@ -1,11 +1,7 @@
 import styled from 'styled-components';
-import backgroundDesktop from '../assets/pattern-background-desktop.svg';
-import backgroundMobile from '../assets/pattern-background-mobile.svg'
-import heroImage from '../assets/illustration-hero.svg';
-import musicIcon from '../assets/icon-music.svg';
 
 const PageWrapper = styled.div`
-  background: hsl(225, 100%, 94%) url(${backgroundDesktop}) no-repeat center top;
+  background: hsl(225, 100%, 94%) url('/assets/pattern-background-desktop.svg') no-repeat center top;
   background-size: 100% 400px; /* Ajusta la imagen para que tenga un alto máximo de 400px y un ancho completo */
   height: 100vh; /* Asegura que el contenedor use todo el alto del viewport */
   width: 100%; /* Ocupa todo el ancho del viewport */
@@ -15,7 +11,7 @@ const PageWrapper = styled.div`
   padding: 2rem;
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
     @media (max-width: 375px) {
-    background: hsl(225, 100%, 94%) url(${backgroundMobile}) no-repeat center top;
+    background: hsl(225, 100%, 94%) url('/assets/pattern-background-mobile.svg') no-repeat center top;
     background-size: 100% 220px;
     padding: 1rem; /* Reduce el padding en pantallas pequeñas */
   }
@@ -162,14 +158,14 @@ const OrderSummaryCard = () => {
     return (
       <PageWrapper>
         <Card>
-          <HeroImage src={heroImage} alt="hero" />
+          <HeroImage src='/assets/illustration-hero.svg' alt="hero" />
           <Title>Order Summary</Title>
           <Paragraph>
             You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
           </Paragraph>
   
           <PlanContainer>
-            <PlanIcon src={musicIcon} alt="music icon" />
+            <PlanIcon src='/assets/icon-music.svg' alt="music icon" />
             <PlanDetails>
               <PlanTitle>Annual Plan</PlanTitle>
               <PlanPrice>$59.99/year</PlanPrice>
